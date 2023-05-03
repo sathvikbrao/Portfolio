@@ -1,0 +1,376 @@
+.nav-link:hover {
+    background-color: #408E91;
+}
+.nav-link:active{
+    background-color: brown;
+}
+.mytext{
+     font-family:"Be Vietnam Pro",sans-serif;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+  }
+.overflow-x-hidden {
+  overflow-x:hidden;
+}
+  .user-image{
+    padding:2.5rem;
+    filter:grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+    background-color: #FFD966;
+  }
+  .user-image img{
+    z-index: 1;
+  }
+  @keyframes scaleImage{
+   0%{
+    filter:grayscale(0);
+    transform: scale(1);
+   }
+
+   50%{
+    transform: scale(1.1);
+    filter:grayscale(1);
+    box-shadow: 3px 3px 10px black;
+   }
+
+   100%{
+    filter:grayscale(0);
+    transform: scale(1);
+   }
+
+  }  
+.Aboutmesec{
+    background-color: #F9E2AF;
+}
+@media screen and (max-width: 767.19px) {
+    .mytext{
+      padding-bottom:2rem;
+    }
+  }
+  
+  .hero-section-right{
+    position: relative;
+    
+  }
+  .absolute{
+    position:absolute;
+    z-index: 1;
+  }  
+  .navbar{
+    z-index:2;
+  }
+  .icon-dots{
+    z-index: 1;
+    bottom:-1rem;
+    right:0;
+    animation-name: dotsAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes dotsAnimation{
+  
+     0%{
+    transform: translateY(0);
+   }
+
+   50%{
+    transform: translateY(-15px);
+   }
+
+   100%{
+    transform: translateY(0);
+   }
+
+  }
+  .icon-cube{
+    z-index: 1;
+    top:-0.8rem;
+    right:1em;
+    animation-name: cubeRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes cubeRotate{
+ 
+     0%{
+         transform: rotateY(0deg) translateY(0px);
+        }
+        
+        50%{
+            transform: rotateY(180deg) translateY(-12px);
+        }
+        
+        100%{
+            transform: rotateY(360deg) translateY(0px);
+        }
+
+
+}
+
+.icon-circle{
+  z-index: 1;
+  left:0;
+  bottom:0;
+  animation-name: shakeEffect;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+@keyframes shakeEffect{
+       50%{
+           left:5%;
+           bottom:10%;
+       }
+}
+
+.icon-zigzag{
+    z-index: 1;
+    top:1.5rem;
+    left:-0.5em;
+    animation:zigzagAnimation 5s ease-in infinite;
+}
+
+@keyframes zigzagAnimation{
+    50%{
+        top:2%;
+        left:5%;
+    }
+}
+
+.icon-plus{
+    z-index: 1;
+    top:-0.8rem;
+    left:50%;
+    animation: shakeEffectPlus 5s ease-in infinite ;
+}
+
+@keyframes shakeEffectPlus {
+    50%{
+        top:3%;
+        left:48%;
+    }
+}
+.role{
+  font-weight: 800;
+  color: rgb(250, 252, 255);
+}
+.hero-section-subheading{
+  font-size:40px;
+  line-height: 45px;
+  color: rgb(250, 252, 255);
+}
+.hero-section-heading{
+  font-size: 35px;
+  font-weight: 500;
+  color:#c9cde2;
+}
+.hero-section-description{
+  width:70%;
+  font-weight:500;
+  color: #F9E2AF;
+}
+.glowmake{
+  -webkit-box-shadow:0px 0px 105px 8px rgba(45,255,196,0.52);
+-moz-box-shadow: 0px 0px 105px 8px rgba(45,255,196,0.52);
+box-shadow: 0px 0px 105px 8px rgba(45,255,196,0.52);
+}
+.HireButton{
+  text-decoration: none;
+  color: black;
+}
+
+.edubox {
+  border: 2px solid #8e44ad;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  
+}
+
+.edubox:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  -webkit-box-shadow:0px 0px 47px 4px rgba(212,45,115,0.9);
+-moz-box-shadow: 0px 0px 47px 4px rgba(212,45,115,0.9);
+box-shadow: 0px 0px 47px 4px rgba(212,45,115,0.9);
+  
+}
+
+@media screen and (max-width: 768px) {
+  .edubox {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.cert{
+  background-color: #EEEEEE;
+  border: 2px solid #d42d2d;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.credential_button {
+
+  padding: 0.8em 1.8em;
+  border: 2px solid #3f0adf;
+  border-radius: 10px;
+  position: relative;
+ 
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000000;
+  font-weight: bold;
+  
+ }
+ 
+ .credential_button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .credential_button:hover::before {
+  width: 105%;
+ }
+ 
+
+.cert:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  -webkit-box-shadow:0px 0px 47px 4px rgba(195,212,45,0.9);
+  -moz-box-shadow: 0px 0px 47px 4px rgba(195,212,45,0.9);
+  box-shadow: 0px 0px 47px 4px rgba(195,212,45,0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .cert{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .icon {
+    display: none;
+  }
+  .headingcert{
+    padding-left: 5%;
+  }
+
+}
+
+@media (max-width: 415.0px) {
+  .icon1 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+  }
+
+
+}
+
+@media (max-width: 630.0px) {
+  .icon2 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+  }
+
+
+}
+
+.techst{
+ 
+  border: 2px solid #B3005E;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+@media (hover: hover) {
+  .tcstkhr:hover .srv-col {
+    transform: rotateY(360deg);
+    transition: transform 5s ease-in-out;
+    transform-style: preserve-3d;
+  }
+}
+.shadow1{
+  -webkit-box-shadow:0px 0px 105px 17px rgba(255,46,133,0.9);
+-moz-box-shadow: 0px 0px 105px 17px rgba(255,46,133,0.9);
+box-shadow: 0px 0px 105px 17px rgba(255,46,133,0.9);
+}
+
+@media (max-width: 360.0px) {
+ .user-image,.hlo{
+    transform: scale(0.8);
+  }
+
+
+}
+
+.button1 {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button1:hover {
+  background-color: #005ea6;
+}
+
+.button1:active {
+  background-color: #004b8c;
+  box-shadow: none;
+}
+
+.button1{
+  font-size: 1rem;
+  padding: 0.9em 4em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
+}
+
+.button1:hover {
+  transform: translate(5px, -5px);
+}
+
+
