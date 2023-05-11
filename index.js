@@ -24,19 +24,19 @@ function scrollToProjects() {
   contactMeSection.scrollIntoView({ behavior: "smooth" });
 }
 
-function setEmpty(){
-  var userName = document.querySelector(".name");
-  var userEmail = document.querySelector(".email");
-  var userMessage = document.querySelector(".message");
+// function setEmpty(){
+//   var userName = document.querySelector(".name");
+//   var userEmail = document.querySelector(".email");
+//   var userMessage = document.querySelector(".message");
   
-  userName.value = "";
-  userName.placeholder = "Name";
+//   userName.value = "";
+//   userName.placeholder = "Name";
   
-  userEmail.value = "";
-  userEmail.placeholder = "Email";
+//   userEmail.value = "";
+//   userEmail.placeholder = "Email";
   
-  userMessage.value = "";
-  userMessage.placeholder = "Message";
+//   userMessage.value = "";
+//   userMessage.placeholder = "Message";
 
-}
+// }
 
