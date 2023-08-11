@@ -433,3 +433,16 @@ box-shadow: 0px 0px 105px 20px rgba(207,152,85,0.49);
  }
  
  
+.my-card{
+  border: #0fd773 solid 3px;
+  background-color: #EEEEEE;
+  transition: all 1s ease-in-out;
+}
+.my-card:hover{
+  transform: scale(1.05);
+  z-index: 1;
+  -webkit-box-shadow:0px 0px 47px 4px rgba(195,212,45,0.9);
+  -moz-box-shadow: 0px 0px 47px 4px rgba(195,212,45,0.9);
+  box-shadow: 0px 0px 47px 4px rgba(195,212,45,0.9);
+  
+}
